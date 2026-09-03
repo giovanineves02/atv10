@@ -1,19 +1,36 @@
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("=== LIVRARIA DEVOPS ===");
-        Livro livro1 = new Livro("Java para iniciantes", "Ana Silva", 80.00, 5);
-        Livro livro2 = new Livro("Devops na prática", "Carlos Souza", 120.00, 3);
 
-        System.out.println("\n Livro 1 ");
-        livro1.exibirDados();
-        System.out.println("Valor Total em estoque R$: " + livro1.calcularValorEstoque());
-        
-        System.out.println("\n Livro 2 ");
-        livro2.exibirDados();
-        System.out.println("Valor Total em estoque R$: " + livro2.calcularValorEstoque());
-        System.out.println("\n Aplicação executada com sucesso!!");
+        System.out.println("=== SISTEMA DE CURSOS ===");
 
-        
+        Curso curso1 = new Curso(
+            "Desenvolvimento Java",
+            "Carlos Silva",
+            40,
+            800.00
+        );
+
+        Curso curso2 = new Curso(
+            "Desenvolvimento Web",
+            "Ana Souza",
+            60,
+            1200.00
+        );
+
+        Curso curso3 = new Curso(
+            "Banco de Dados",
+            "Marcos Oliveira",
+            30,
+            600.00
+        );
+
+        curso1.exibirInformacoes();
+        System.out.println();
+
+        curso2.exibirInformacoes();
+        System.out.println();
+
+        curso3.exibirInformacoes();
     }
-    
 }
