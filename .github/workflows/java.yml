@@ -1,4 +1,4 @@
-name: Pipeline Java - Calculadora IMC
+name: Pipeline Java - Calculadoras IMC e Potência
 
 on:
   push:
